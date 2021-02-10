@@ -29,10 +29,12 @@ class List extends React.Component {
           <div className={styles.description}>
             {ReactHtmlParser(this.props.description)}
           </div>
+
           <div className={styles.columns}>
-              {this.state.columns.map(({key, ...columnProps}) => (
-                <Column key={key} {...columnProps} />
-                ))}
+              <Column titleCol={'test1'} />
+              <Column titleCol={'test2'} />
+              <Column titleCol={'test3'} />
+              
           </div>
           <div className={styles.creator}>
           <Creator text={settings.columnCreatorText} action={title => this.addColumn(title)}/>

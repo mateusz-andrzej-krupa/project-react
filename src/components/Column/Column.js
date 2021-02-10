@@ -8,7 +8,7 @@ class Column extends React.Component {
     }
     
     static defaultProps = {
-        titleCol: <h3>test</h3>
+        titleCol: <h3>column_name</h3>
     }
 
     render(props) {
