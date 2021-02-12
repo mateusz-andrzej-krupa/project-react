@@ -4,6 +4,7 @@ import List from '../List/List.js';
 import {pageContents, listData} from '../../data/dataStore.js';
 
 class App extends React.Component {
+  const test = "1"
   render() {
     return (
       <main className={styles.component}>
