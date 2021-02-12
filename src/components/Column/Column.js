@@ -3,7 +3,7 @@ import styles from './Column.scss';
 import PropTypes from 'prop-types';
 import Card from '../Card/Card.js';
 import Icon from '../Icon/Icon';
-// import {settings} from '../../data/dataStore';
+import {settings} from '../../data/dataStore';
 // import Creator from '../Creator/Creator';
 
 
@@ -15,7 +15,7 @@ class Column extends React.Component {
     }
 
     static defaultProps = { 
-      title: <h3>column_name</h3>,
+      icon: settings.defaultColumnIcon,
     }
   
     render() {
