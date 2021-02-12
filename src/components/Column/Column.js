@@ -4,14 +4,15 @@ import PropTypes from 'prop-types';
 import Card from '../Card/Card.js';
 import Icon from '../Icon/Icon';
 import {settings} from '../../data/dataStore';
-// import Creator from '../Creator/Creator';
+import Creator from '../Creator/Creator';
 
 
 class Column extends React.Component {
     static propTypes = {
       title: PropTypes.string,
-      cards: PropTypes.string,
+      cards: PropTypes.array,
       icon: PropTypes.string,
+      addCards: PropTypes.func,
     }
 
     static defaultProps = { 
@@ -19,7 +20,7 @@ class Column extends React.Component {
     }
   
     render() {
-      const {title, icon, cards} = this.props;
+      const {title, icon, cards, addCards} = this.props;
       return (
         <section className={styles.component}>
           <h3 className={title}>
@@ -33,10 +34,9 @@ class Column extends React.Component {
             ))}
           </div>
           
-          {/*
           <div className={styles.creator}>
-            <Creator text={settings.cardCreatorText} action={title => this.addCard(title)}/>
-          </div>  */}
+            <Creator text={settings.cardCreatorText} action={addCards}/>
+          </div> 
 
         </section>
 
