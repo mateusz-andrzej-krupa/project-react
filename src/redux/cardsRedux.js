@@ -1,10 +1,10 @@
 import shortid from 'shortid';
 
 // selectors
-export const getCardsForColumn = ({cards}, listId) => cards.filter(card => card.listId == listId);
+export const getCardsForColumn = ({cards}, columnId) => cards.filter(card => card.columnId == columnId);
 
 // action name creator
-const reducerName = 'columns';
+const reducerName = 'cards';
 const createActionName = name => `app/${reducerName}/${name}`;
 
 // action types

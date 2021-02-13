@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './List.scss';
+import PropTypes from 'prop-types';
 import Hero from '../Hero/Hero';
 import Column from '../Column/ColumnContainer';
-import PropTypes from 'prop-types';
 import {settings} from '../../data/dataStore';
-import ReactHtmlParser from 'react-html-parser';
 import Creator from '../Creator/Creator';
+import ReactHtmlParser from 'react-html-parser';
 
 class List extends React.Component {
   static propTypes = {
@@ -22,6 +22,7 @@ class List extends React.Component {
 
   render() {
     const {title, image, description, columns, addColumn} = this.props;
+    console.log('akcja kolumna do listy', addColumn);
     return (
       <section  className={styles.component}>
         <Hero titleText={title} imageURL={image} />
