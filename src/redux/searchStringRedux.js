@@ -15,7 +15,6 @@ export const createActionAddCard = payload => ({ payload, type: SEARCH });
 
 // reducer
 export default function reducer(statePart = '', action = {}) {
-  console.log('=================', statePart, 'action', action);
   switch (action.type) {
     case SEARCH:
       return action.payload;
