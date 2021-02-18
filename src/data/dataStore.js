@@ -19,6 +19,20 @@ export const pageContents = {
   subtitle: 'A simple to-do app, with lists, columns and cards',
 };
 
+export const faq = {
+  title: 'Frequently asked questions',
+  subtitle: '(FAQ)',
+  image: 'https://cdn.shopify.com/s/files/1/0038/6357/6643/files/icouniforms-faq-image.png?16835040154830260790://st.depositphotos.com/1005920/3087/i/950/depositphotos_30874237-stock-photo-faq-icon.https://alltest.com.au/wp-content/uploads/faq.ico.png',
+  text: 'Lorem ipsum – tekst składający się z łacińskich i quasi-łacińskich wyrazów, mający korzenie w klasycznej łacinie, wzorowany na fragmencie traktatu Cycerona „O granicach dobra i zła” napisanego w 45 p.n.e. Tekst jest stosowany do demonstracji krojów pisma, kompozycji kolumny itp. -zrodlo: Wikipedia',
+};
+export const info = {
+  title: 'Informations & details',
+  subtitle: '(Info)',
+  image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Gtk-dialog-info.svg/1200px-Gtk-dialog-info.svg.png',
+  text: 'Lorem ipsum – tekst składający się z łacińskich i quasi-łacińskich wyrazów, mający korzenie w klasycznej łacinie, wzorowany na fragmencie traktatu Cycerona „O granicach dobra i zła” napisanego w 45 p.n.e. Tekst jest stosowany do demonstracji krojów pisma, kompozycji kolumny itp. -zrodlo: Wikipedia',
+};
+
+
 export const listData = {
   title: 'Things to do <sup>soon!</sup>',
   description: 'Interesting things I want to check out!',
