@@ -16,7 +16,7 @@
   top: 50%;
   font-size: ($base-size * 2.5);
   text-transform: uppercase;
-  color: $color-light;
+  color: $color-dark;
   transform: translate(-50%,-50%);
 }
 
@@ -27,6 +27,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.txt {
+  margin: 0 0;
+  padding: 0 0;
 }
 
 @media (max-width: 767px) {

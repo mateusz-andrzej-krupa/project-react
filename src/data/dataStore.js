@@ -93,6 +93,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Letters to write <sup>x8!</sup>',
+    description: 'Who want get letter from u?',
+    image: 'https://d31029zd06w0t6.cloudfront.net/wp-content/uploads/sites/38/2020/02/web1_729931c3.jpg',
+  },
+  {
+    id: 'list-3',
+    title: 'Best songs<sup>ever!</sup>',
+    description: 'Music make me intrested',
+    image: 'https://media.timeout.com/images/102438769/image.jpg',
+  },
 ];
 
 const columns = [

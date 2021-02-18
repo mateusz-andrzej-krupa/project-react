@@ -8,7 +8,7 @@ const Hero = props => (
     <h2 className={styles.title}>{ReactHtmlParser(props.titleText)}</h2>     
     <h3 className={styles.title}>{ReactHtmlParser(props.subTitleText)}</h3>
     <img className={styles.image} src={props.imageURL}></img>
-    <p className={styles.component}>{ReactHtmlParser(props.text)}</p>
+    <p className={styles.txt}>{ReactHtmlParser(props.text)}</p>
   </header>
 );
 Hero.propTypes = {
