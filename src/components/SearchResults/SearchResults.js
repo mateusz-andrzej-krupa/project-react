@@ -21,7 +21,7 @@ class SearchResults extends React.Component {
   
     render() {
       const {title, icon, cards, addCards} = this.props;
-      console.log('propsy w searchResults', this.props);
+      console.log('propsy w searchResults', cards);
       return (
         <section className={styles.component}>
           <Search />

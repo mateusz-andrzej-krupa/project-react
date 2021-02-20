@@ -20,7 +20,7 @@ class Column extends React.Component {
   
     render() {
       const {title, icon, cards, addCards} = this.props;
-      console.log('columny', this.props);
+      console.log('propsy w columnach', this.props);
       return (
         <section className={styles.component}>
           <h3 className={title}>
