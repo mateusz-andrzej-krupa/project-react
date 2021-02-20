@@ -1,12 +1,13 @@
 import React from 'react';
-import styles from './Column.scss';
+import styles from './SearchResults.scss';
 import PropTypes from 'prop-types';
 import Card from '../Card/Card.js';
 import Icon from '../Icon/Icon';
+import Search from '../Search/Search';
 import {settings} from '../../data/dataStore';
 import Creator from '../Creator/Creator';
 
-class Column extends React.Component {
+class SearchResults extends React.Component {
     static propTypes = {
       title: PropTypes.string,
       cards: PropTypes.array,
@@ -20,9 +21,10 @@ class Column extends React.Component {
   
     render() {
       const {title, icon, cards, addCards} = this.props;
-      console.log('columny', this.props);
+      console.log('propsy w searchResults', this.props);
       return (
         <section className={styles.component}>
+          <Search />
           <h3 className={title}>
             <Icon name={icon} />
             {title}
@@ -45,4 +47,4 @@ class Column extends React.Component {
     }
 }
 
-export default Column;
+export default SearchResults;
