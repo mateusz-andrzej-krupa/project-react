@@ -22,6 +22,7 @@ class SearchResults extends React.Component {
     render() {
       const {title, icon, cards, addCards} = this.props;
       console.log('propsy w searchResults', cards);
+
       return (
         <section className={styles.component}>
           <Search />
@@ -31,7 +32,7 @@ class SearchResults extends React.Component {
           </h3>
 
           <div className={styles.cards}>
-            {cards.map(card => (
+            {this.getSearchingCards(cards).map(card => (
               <Card key={card.id} {...card} />
             ))}
           </div>
@@ -39,11 +40,23 @@ class SearchResults extends React.Component {
           <div className={styles.creator}>
             <Creator text={settings.cardCreatorText} action={addCards}/>
           </div> 
-
         </section>
-
-            
       );
+    }
+
+    getSearchingCards(cards) {
+      const searchText = (this.props.match.params.id).trim().toLowerCase();      
+      
+      const filteredCards = cards.filter(card => {                
+        if (!searchText) {
+          return true;
+        }
+
+        const containSerachingPhrase = card.title.toLowerCase().includes(searchText);
+        return containSerachingPhrase;
+      });
+
+      return filteredCards;
     }
 }
 
